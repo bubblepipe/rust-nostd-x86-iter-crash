@@ -15,7 +15,7 @@ This folder contains a minimal bare-metal environment to demonstrate the iterato
 - `linker.ld` - Linker script for bare metal
 - `i686-bare-metal.json` - Custom target specification
 - `build.sh` - Build script
-- `run.sh` - Run script for QEMU
+- `run_clean.sh` - Run script for QEMU
 
 ## Building
 
