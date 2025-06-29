@@ -6,7 +6,7 @@ This folder contains a minimal bare-metal environment to demonstrate the iterato
 
 - NASM assembler: `brew install nasm` (macOS) or `apt install nasm` (Linux)
 - QEMU: `brew install qemu` (macOS) or `apt install qemu-system-x86` (Linux)
-- Rust nightly with i686 target: `rustup target add i686-unknown-none`
+- Rust nightly with i686 target: `rustup target add x86_64-unknown-none`
 
 ## Files
 
@@ -15,7 +15,7 @@ This folder contains a minimal bare-metal environment to demonstrate the iterato
 - `linker.ld` - Linker script for bare metal
 - `i686-bare-metal.json` - Custom target specification
 - `build.sh` - Build script
-- `run.sh` - Run script for QEMU
+- `run_clean.sh` - Run script for QEMU
 
 ## Building
 
@@ -26,7 +26,7 @@ This folder contains a minimal bare-metal environment to demonstrate the iterato
 ## Running
 
 ```bash
-./run.sh
+./run_clean.sh
 ```
 
 ## The Bug
