@@ -6,7 +6,7 @@ This folder contains a minimal bare-metal environment to demonstrate the iterato
 
 - NASM assembler: `brew install nasm` (macOS) or `apt install nasm` (Linux)
 - QEMU: `brew install qemu` (macOS) or `apt install qemu-system-x86` (Linux)
-- Rust nightly with i686 target: `rustup target add i686-unknown-none`
+- Rust nightly with i686 target: `rustup target add x86_64-unknown-none`
 
 ## Files
 
