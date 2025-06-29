@@ -26,7 +26,7 @@ This folder contains a minimal bare-metal environment to demonstrate the iterato
 ## Running
 
 ```bash
-./run.sh
+./run_clean.sh
 ```
 
 ## The Bug
