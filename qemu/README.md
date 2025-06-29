@@ -29,15 +29,6 @@ This folder contains a minimal bare-metal environment to demonstrate the iterato
 ./run.sh
 ```
 
-## Expected Behavior
-
-When running in QEMU, you should see in the top-left corner:
-- `S` - Start marker (always shown)
-- `S1` - First test passed (windows().enumerate() works)
-- Then the system crashes (due to the bug)
-
-If the bug were fixed, you would see `S12!` indicating all tests passed.
-
 ## The Bug
 
 The specific iterator chain that causes the crash:
