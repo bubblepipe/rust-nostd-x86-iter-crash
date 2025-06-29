@@ -6,9 +6,9 @@ use core::panic::PanicInfo;
 // Serial port base address
 const SERIAL_PORT: u16 = 0x3F8;
 
-// Simple serial output
+// Simple serial output for i386
 unsafe fn outb(port: u16, val: u8) {
-    core::arch::asm!("out dx, al", in("dx") port, in("al") val);
+    core::arch::asm!("out dx, al", in("dx") port, in("al") val, options(nomem, nostack));
 }
 
 fn serial_write_byte(b: u8) {
@@ -41,7 +41,7 @@ pub extern "C" fn rust_main() -> ! {
         outb(SERIAL_PORT + 2, 0xC7);    // Enable FIFO
     }
     
-    serial_write("Starting iterator bug test...\n");
+    serial_write("Starting iterator bug test (32-bit)...\n");
     
     // Test 1: windows().enumerate() - should work
     {
